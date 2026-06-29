@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #050505;
+  font-family: "Rajdhani", Arial, sans-serif;
+}
+
+@layer components {
+  .section-pad {
+    @apply px-5 py-16 sm:px-8 lg:px-16;
+  }
+
+  .display-title {
+    @apply font-display text-3xl font-extrabold uppercase tracking-normal text-white sm:text-4xl lg:text-5xl;
+  }
+
+  .eyebrow {
+    @apply font-display text-sm font-bold uppercase tracking-normal text-danger;
+  }
+
+  .panel {
+    @apply border border-line bg-panel/90;
+  }
+
+  .btn-primary {
+    @apply inline-flex min-h-11 items-center justify-center bg-danger px-6 font-display text-sm font-bold uppercase text-white transition duration-200 hover:bg-white hover:text-ink;
+  }
+
+  .btn-outline {
+    @apply inline-flex min-h-11 items-center justify-center border border-white/40 px-6 font-display text-sm font-bold uppercase text-white transition duration-200 hover:border-danger hover:bg-danger;
+  }
+}
